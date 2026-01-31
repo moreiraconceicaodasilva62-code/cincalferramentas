@@ -12,6 +12,34 @@
   gtag('config', 'AW-17921275289');
 </script>
 
+  <!-- Event snippet for Visualização de página (2) conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17921275289/OO8yCNWLpfAbEJnrw-FC',
+      'value': 1.0,
+      'currency': 'BRL'
+  });
+</script>
+
+  <!-- Event snippet for Visualização de página (2) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17921275289/OO8yCNWLpfAbEJnrw-FC',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 
     
     <meta charset="UTF-8">
